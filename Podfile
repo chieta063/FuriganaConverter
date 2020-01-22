@@ -6,6 +6,7 @@ target 'FuriganaConverter' do
   use_frameworks!
 
   # Pods for FuriganaConverter
+  pod 'R.swift'
 
   target 'FuriganaConverterTests' do
     inherit! :search_paths
