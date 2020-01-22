@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5343DD7123D89191000D39F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD7023D89191000D39F3 /* AppDelegate.swift */; };
+		5343DD7323D89191000D39F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD7223D89191000D39F3 /* SceneDelegate.swift */; };
+		5343DD7523D89191000D39F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD7423D89191000D39F3 /* ViewController.swift */; };
+		5343DD7823D89191000D39F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5343DD7623D89191000D39F3 /* Main.storyboard */; };
+		5343DD7A23D89192000D39F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5343DD7923D89192000D39F3 /* Assets.xcassets */; };
+		5343DD7D23D89192000D39F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5343DD7B23D89192000D39F3 /* LaunchScreen.storyboard */; };
+		5343DD8823D89192000D39F3 /* FuriganaConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD8723D89192000D39F3 /* FuriganaConverterTests.swift */; };
+		5343DD9323D89192000D39F3 /* FuriganaConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD9223D89192000D39F3 /* FuriganaConverterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5343DD8423D89192000D39F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5343DD6523D89191000D39F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5343DD6C23D89191000D39F3;
+			remoteInfo = FuriganaConverter;
+		};
+		5343DD8F23D89192000D39F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5343DD6523D89191000D39F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5343DD6C23D89191000D39F3;
+			remoteInfo = FuriganaConverter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5343DD6D23D89191000D39F3 /* FuriganaConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuriganaConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5343DD7023D89191000D39F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5343DD7223D89191000D39F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5343DD7423D89191000D39F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5343DD7723D89191000D39F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5343DD7923D89192000D39F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5343DD7C23D89192000D39F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5343DD7E23D89192000D39F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5343DD8323D89192000D39F3 /* FuriganaConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuriganaConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5343DD8723D89192000D39F3 /* FuriganaConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaConverterTests.swift; sourceTree = "<group>"; };
+		5343DD8923D89192000D39F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5343DD8E23D89192000D39F3 /* FuriganaConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuriganaConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5343DD9223D89192000D39F3 /* FuriganaConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaConverterUITests.swift; sourceTree = "<group>"; };
+		5343DD9423D89192000D39F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5343DD6A23D89191000D39F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5343DD8023D89192000D39F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5343DD8B23D89192000D39F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5343DD6423D89191000D39F3 = {
+			isa = PBXGroup;
+			children = (
+				5343DD6F23D89191000D39F3 /* FuriganaConverter */,
+				5343DD8623D89192000D39F3 /* FuriganaConverterTests */,
+				5343DD9123D89192000D39F3 /* FuriganaConverterUITests */,
+				5343DD6E23D89191000D39F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5343DD6E23D89191000D39F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5343DD6D23D89191000D39F3 /* FuriganaConverter.app */,
+				5343DD8323D89192000D39F3 /* FuriganaConverterTests.xctest */,
+				5343DD8E23D89192000D39F3 /* FuriganaConverterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5343DD6F23D89191000D39F3 /* FuriganaConverter */ = {
+			isa = PBXGroup;
+			children = (
+				5343DD7023D89191000D39F3 /* AppDelegate.swift */,
+				5343DD7223D89191000D39F3 /* SceneDelegate.swift */,
+				5343DD7423D89191000D39F3 /* ViewController.swift */,
+				5343DD7623D89191000D39F3 /* Main.storyboard */,
+				5343DD7923D89192000D39F3 /* Assets.xcassets */,
+				5343DD7B23D89192000D39F3 /* LaunchScreen.storyboard */,
+				5343DD7E23D89192000D39F3 /* Info.plist */,
+			);
+			path = FuriganaConverter;
+			sourceTree = "<group>";
+		};
+		5343DD8623D89192000D39F3 /* FuriganaConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				5343DD8723D89192000D39F3 /* FuriganaConverterTests.swift */,
+				5343DD8923D89192000D39F3 /* Info.plist */,
+			);
+			path = FuriganaConverterTests;
+			sourceTree = "<group>";
+		};
+		5343DD9123D89192000D39F3 /* FuriganaConverterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5343DD9223D89192000D39F3 /* FuriganaConverterUITests.swift */,
+				5343DD9423D89192000D39F3 /* Info.plist */,
+			);
+			path = FuriganaConverterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5343DD6C23D89191000D39F3 /* FuriganaConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5343DD9723D89192000D39F3 /* Build configuration list for PBXNativeTarget "FuriganaConverter" */;
+			buildPhases = (
+				5343DD6923D89191000D39F3 /* Sources */,
+				5343DD6A23D89191000D39F3 /* Frameworks */,
+				5343DD6B23D89191000D39F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuriganaConverter;
+			productName = FuriganaConverter;
+			productReference = 5343DD6D23D89191000D39F3 /* FuriganaConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5343DD8223D89192000D39F3 /* FuriganaConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5343DD9A23D89192000D39F3 /* Build configuration list for PBXNativeTarget "FuriganaConverterTests" */;
+			buildPhases = (
+				5343DD7F23D89192000D39F3 /* Sources */,
+				5343DD8023D89192000D39F3 /* Frameworks */,
+				5343DD8123D89192000D39F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5343DD8523D89192000D39F3 /* PBXTargetDependency */,
+			);
+			name = FuriganaConverterTests;
+			productName = FuriganaConverterTests;
+			productReference = 5343DD8323D89192000D39F3 /* FuriganaConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5343DD8D23D89192000D39F3 /* FuriganaConverterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5343DD9D23D89192000D39F3 /* Build configuration list for PBXNativeTarget "FuriganaConverterUITests" */;
+			buildPhases = (
+				5343DD8A23D89192000D39F3 /* Sources */,
+				5343DD8B23D89192000D39F3 /* Frameworks */,
+				5343DD8C23D89192000D39F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5343DD9023D89192000D39F3 /* PBXTargetDependency */,
+			);
+			name = FuriganaConverterUITests;
+			productName = FuriganaConverterUITests;
+			productReference = 5343DD8E23D89192000D39F3 /* FuriganaConverterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5343DD6523D89191000D39F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "阿部紘明";
+				TargetAttributes = {
+					5343DD6C23D89191000D39F3 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					5343DD8223D89192000D39F3 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5343DD6C23D89191000D39F3;
+					};
+					5343DD8D23D89192000D39F3 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5343DD6C23D89191000D39F3;
+					};
+				};
+			};
+			buildConfigurationList = 5343DD6823D89191000D39F3 /* Build configuration list for PBXProject "FuriganaConverter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5343DD6423D89191000D39F3;
+			productRefGroup = 5343DD6E23D89191000D39F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5343DD6C23D89191000D39F3 /* FuriganaConverter */,
+				5343DD8223D89192000D39F3 /* FuriganaConverterTests */,
+				5343DD8D23D89192000D39F3 /* FuriganaConverterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5343DD6B23D89191000D39F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5343DD7D23D89192000D39F3 /* LaunchScreen.storyboard in Resources */,
+				5343DD7A23D89192000D39F3 /* Assets.xcassets in Resources */,
+				5343DD7823D89191000D39F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5343DD8123D89192000D39F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5343DD8C23D89192000D39F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5343DD6923D89191000D39F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5343DD7523D89191000D39F3 /* ViewController.swift in Sources */,
+				5343DD7123D89191000D39F3 /* AppDelegate.swift in Sources */,
+				5343DD7323D89191000D39F3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5343DD7F23D89192000D39F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5343DD8823D89192000D39F3 /* FuriganaConverterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5343DD8A23D89192000D39F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5343DD9323D89192000D39F3 /* FuriganaConverterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5343DD8523D89192000D39F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5343DD6C23D89191000D39F3 /* FuriganaConverter */;
+			targetProxy = 5343DD8423D89192000D39F3 /* PBXContainerItemProxy */;
+		};
+		5343DD9023D89192000D39F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5343DD6C23D89191000D39F3 /* FuriganaConverter */;
+			targetProxy = 5343DD8F23D89192000D39F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5343DD7623D89191000D39F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5343DD7723D89191000D39F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5343DD7B23D89192000D39F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5343DD7C23D89192000D39F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5343DD9523D89192000D39F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5343DD9623D89192000D39F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5343DD9823D89192000D39F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WXLBJVR7R;
+				INFOPLIST_FILE = FuriganaConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiroaki.FuriganaConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5343DD9923D89192000D39F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WXLBJVR7R;
+				INFOPLIST_FILE = FuriganaConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiroaki.FuriganaConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5343DD9B23D89192000D39F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WXLBJVR7R;
+				INFOPLIST_FILE = FuriganaConverterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiroaki.FuriganaConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuriganaConverter.app/FuriganaConverter";
+			};
+			name = Debug;
+		};
+		5343DD9C23D89192000D39F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WXLBJVR7R;
+				INFOPLIST_FILE = FuriganaConverterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiroaki.FuriganaConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuriganaConverter.app/FuriganaConverter";
+			};
+			name = Release;
+		};
+		5343DD9E23D89192000D39F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WXLBJVR7R;
+				INFOPLIST_FILE = FuriganaConverterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiroaki.FuriganaConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FuriganaConverter;
+			};
+			name = Debug;
+		};
+		5343DD9F23D89192000D39F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WXLBJVR7R;
+				INFOPLIST_FILE = FuriganaConverterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiroaki.FuriganaConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FuriganaConverter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5343DD6823D89191000D39F3 /* Build configuration list for PBXProject "FuriganaConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5343DD9523D89192000D39F3 /* Debug */,
+				5343DD9623D89192000D39F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5343DD9723D89192000D39F3 /* Build configuration list for PBXNativeTarget "FuriganaConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5343DD9823D89192000D39F3 /* Debug */,
+				5343DD9923D89192000D39F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5343DD9A23D89192000D39F3 /* Build configuration list for PBXNativeTarget "FuriganaConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5343DD9B23D89192000D39F3 /* Debug */,
+				5343DD9C23D89192000D39F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5343DD9D23D89192000D39F3 /* Build configuration list for PBXNativeTarget "FuriganaConverterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5343DD9E23D89192000D39F3 /* Debug */,
+				5343DD9F23D89192000D39F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5343DD6523D89191000D39F3 /* Project object */;
+}
