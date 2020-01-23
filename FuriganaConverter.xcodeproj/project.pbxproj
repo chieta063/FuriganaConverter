@@ -19,6 +19,16 @@
 		80FF5076F616B2B5E497AD2B /* Pods_FuriganaConverter_FuriganaConverterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26F6656426D5824408D43EC /* Pods_FuriganaConverter_FuriganaConverterUITests.framework */; };
 		904730A2E68C6CFD8EB28A78 /* Pods_FuriganaConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66164D313E266792374A8F71 /* Pods_FuriganaConverterTests.framework */; };
 		B220F55481B73A834AF9792C /* Pods_FuriganaConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C2F2EEC2690DF7E0C7CB89 /* Pods_FuriganaConverter.framework */; };
+		C162B09E23D9489E002D01B0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09923D9489E002D01B0 /* RxSwift.framework */; };
+		C162B09F23D9489E002D01B0 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09923D9489E002D01B0 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C162B0A023D9489E002D01B0 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09A23D9489E002D01B0 /* RxBlocking.framework */; };
+		C162B0A123D9489E002D01B0 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09A23D9489E002D01B0 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C162B0A223D9489E002D01B0 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09B23D9489E002D01B0 /* RxTest.framework */; };
+		C162B0A323D9489E002D01B0 /* RxTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09B23D9489E002D01B0 /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C162B0A423D9489E002D01B0 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09C23D9489E002D01B0 /* RxRelay.framework */; };
+		C162B0A523D9489E002D01B0 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09C23D9489E002D01B0 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C162B0A623D9489E002D01B0 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09D23D9489E002D01B0 /* RxCocoa.framework */; };
+		C162B0A723D9489E002D01B0 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09D23D9489E002D01B0 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +47,24 @@
 			remoteInfo = FuriganaConverter;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C162B0A823D9489E002D01B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C162B0A523D9489E002D01B0 /* RxRelay.framework in Embed Frameworks */,
+				C162B09F23D9489E002D01B0 /* RxSwift.framework in Embed Frameworks */,
+				C162B0A123D9489E002D01B0 /* RxBlocking.framework in Embed Frameworks */,
+				C162B0A723D9489E002D01B0 /* RxCocoa.framework in Embed Frameworks */,
+				C162B0A323D9489E002D01B0 /* RxTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		504A6A5CB944730CE1480C33 /* Pods-FuriganaConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuriganaConverterTests.release.xcconfig"; path = "Target Support Files/Pods-FuriganaConverterTests/Pods-FuriganaConverterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +88,11 @@
 		66164D313E266792374A8F71 /* Pods_FuriganaConverterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuriganaConverterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26F6656426D5824408D43EC /* Pods_FuriganaConverter_FuriganaConverterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuriganaConverter_FuriganaConverterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32DD9D24CD692173C0808F8 /* Pods-FuriganaConverter-FuriganaConverterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuriganaConverter-FuriganaConverterUITests.debug.xcconfig"; path = "Target Support Files/Pods-FuriganaConverter-FuriganaConverterUITests/Pods-FuriganaConverter-FuriganaConverterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C162B09923D9489E002D01B0 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		C162B09A23D9489E002D01B0 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		C162B09B23D9489E002D01B0 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		C162B09C23D9489E002D01B0 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		C162B09D23D9489E002D01B0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		C3017265442E9FC3D2E094FF /* Pods-FuriganaConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuriganaConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-FuriganaConverterTests/Pods-FuriganaConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F18F7BC74DD9C5217C919ABA /* Pods-FuriganaConverter-FuriganaConverterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuriganaConverter-FuriganaConverterUITests.release.xcconfig"; path = "Target Support Files/Pods-FuriganaConverter-FuriganaConverterUITests/Pods-FuriganaConverter-FuriganaConverterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F5C2F2EEC2690DF7E0C7CB89 /* Pods_FuriganaConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuriganaConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +103,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C162B0A623D9489E002D01B0 /* RxCocoa.framework in Frameworks */,
+				C162B09E23D9489E002D01B0 /* RxSwift.framework in Frameworks */,
 				B220F55481B73A834AF9792C /* Pods_FuriganaConverter.framework in Frameworks */,
+				C162B0A223D9489E002D01B0 /* RxTest.framework in Frameworks */,
+				C162B0A023D9489E002D01B0 /* RxBlocking.framework in Frameworks */,
+				C162B0A423D9489E002D01B0 /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +202,11 @@
 		F52FB498234C92F6A3CF9862 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C162B09A23D9489E002D01B0 /* RxBlocking.framework */,
+				C162B09D23D9489E002D01B0 /* RxCocoa.framework */,
+				C162B09C23D9489E002D01B0 /* RxRelay.framework */,
+				C162B09923D9489E002D01B0 /* RxSwift.framework */,
+				C162B09B23D9489E002D01B0 /* RxTest.framework */,
 				F5C2F2EEC2690DF7E0C7CB89 /* Pods_FuriganaConverter.framework */,
 				B26F6656426D5824408D43EC /* Pods_FuriganaConverter_FuriganaConverterUITests.framework */,
 				66164D313E266792374A8F71 /* Pods_FuriganaConverterTests.framework */,
@@ -182,8 +225,10 @@
 				5343DD6923D89191000D39F3 /* Sources */,
 				5343DD6A23D89191000D39F3 /* Frameworks */,
 				5343DD6B23D89191000D39F3 /* Resources */,
-				5343DDA023D89784000D39F3 /* ShellScript */,
+				5343DDA023D89784000D39F3 /* R.swift */,
 				64DA2FA21711630C4CADF469 /* [CP] Embed Pods Frameworks */,
+				C162B0A823D9489E002D01B0 /* Embed Frameworks */,
+				C162B0A923D948EA002D01B0 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -304,7 +349,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5343DDA023D89784000D39F3 /* ShellScript */ = {
+		5343DDA023D89784000D39F3 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,6 +359,7 @@
 			inputPaths = (
 				"$TEMP_DIR/rswift-lastrun",
 			);
+			name = R.swift;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -356,6 +402,29 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FuriganaConverter-FuriganaConverterUITests/Pods-FuriganaConverter-FuriganaConverterUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C162B0A923D948EA002D01B0 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
 		};
 		C2701E1CFDF334A6E41C1689 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -610,6 +679,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WXLBJVR7R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FuriganaConverter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -631,6 +704,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WXLBJVR7R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FuriganaConverter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
