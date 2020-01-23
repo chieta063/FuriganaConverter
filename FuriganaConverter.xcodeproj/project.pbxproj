@@ -26,6 +26,10 @@
 		C162B0A623D9489E002D01B0 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09D23D9489E002D01B0 /* RxCocoa.framework */; };
 		C162B0A723D9489E002D01B0 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09D23D9489E002D01B0 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C18E3E8223D9743600798F18 /* HiraganaTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C18E3E8123D9743600798F18 /* HiraganaTextViewController.xib */; };
+		C1CF57AA23D9901C00B4B56D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CF57A823D9901C00B4B56D /* Alamofire.framework */; };
+		C1CF57AB23D9901C00B4B56D /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1CF57A823D9901C00B4B56D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1CF57AC23D9901C00B4B56D /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CF57A923D9901C00B4B56D /* RxAlamofire.framework */; };
+		C1CF57AD23D9901C00B4B56D /* RxAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1CF57A923D9901C00B4B56D /* RxAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1F6B71823D94D9600C61805 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09A23D9489E002D01B0 /* RxBlocking.framework */; };
 		C1F6B71923D94D9600C61805 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09B23D9489E002D01B0 /* RxTest.framework */; };
 		C1F6B71F23D94F6500C61805 /* KanjiTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F6B71E23D94F6500C61805 /* KanjiTextViewController.swift */; };
@@ -62,7 +66,9 @@
 				C162B0A523D9489E002D01B0 /* RxRelay.framework in Embed Frameworks */,
 				C162B09F23D9489E002D01B0 /* RxSwift.framework in Embed Frameworks */,
 				C162B0A723D9489E002D01B0 /* RxCocoa.framework in Embed Frameworks */,
+				C1CF57AB23D9901C00B4B56D /* Alamofire.framework in Embed Frameworks */,
 				C1F6B72623D963AF00C61805 /* SnapKit.framework in Embed Frameworks */,
+				C1CF57AD23D9901C00B4B56D /* RxAlamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +103,8 @@
 		C162B09C23D9489E002D01B0 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		C162B09D23D9489E002D01B0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		C18E3E8123D9743600798F18 /* HiraganaTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HiraganaTextViewController.xib; sourceTree = "<group>"; };
+		C1CF57A823D9901C00B4B56D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		C1CF57A923D9901C00B4B56D /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
 		C1F6B71E23D94F6500C61805 /* KanjiTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiTextViewController.swift; sourceTree = "<group>"; };
 		C1F6B72023D94F8400C61805 /* HiraganaTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaTextViewController.swift; sourceTree = "<group>"; };
 		C1F6B72223D94FE500C61805 /* KanjiTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KanjiTextViewController.xib; sourceTree = "<group>"; };
@@ -112,6 +120,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C162B0A623D9489E002D01B0 /* RxCocoa.framework in Frameworks */,
+				C1CF57AA23D9901C00B4B56D /* Alamofire.framework in Frameworks */,
+				C1CF57AC23D9901C00B4B56D /* RxAlamofire.framework in Frameworks */,
 				C162B09E23D9489E002D01B0 /* RxSwift.framework in Frameworks */,
 				B220F55481B73A834AF9792C /* Pods_FuriganaConverter.framework in Frameworks */,
 				C162B0A423D9489E002D01B0 /* RxRelay.framework in Frameworks */,
@@ -239,6 +249,8 @@
 		F52FB498234C92F6A3CF9862 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1CF57A823D9901C00B4B56D /* Alamofire.framework */,
+				C1CF57A923D9901C00B4B56D /* RxAlamofire.framework */,
 				C1F6B72423D963AF00C61805 /* SnapKit.framework */,
 				C162B09A23D9489E002D01B0 /* RxBlocking.framework */,
 				C162B09D23D9489E002D01B0 /* RxCocoa.framework */,
@@ -455,6 +467,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
