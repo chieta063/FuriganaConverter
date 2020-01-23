@@ -21,14 +21,12 @@
 		B220F55481B73A834AF9792C /* Pods_FuriganaConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C2F2EEC2690DF7E0C7CB89 /* Pods_FuriganaConverter.framework */; };
 		C162B09E23D9489E002D01B0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09923D9489E002D01B0 /* RxSwift.framework */; };
 		C162B09F23D9489E002D01B0 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09923D9489E002D01B0 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C162B0A023D9489E002D01B0 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09A23D9489E002D01B0 /* RxBlocking.framework */; };
-		C162B0A123D9489E002D01B0 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09A23D9489E002D01B0 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C162B0A223D9489E002D01B0 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09B23D9489E002D01B0 /* RxTest.framework */; };
-		C162B0A323D9489E002D01B0 /* RxTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09B23D9489E002D01B0 /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C162B0A423D9489E002D01B0 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09C23D9489E002D01B0 /* RxRelay.framework */; };
 		C162B0A523D9489E002D01B0 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09C23D9489E002D01B0 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C162B0A623D9489E002D01B0 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09D23D9489E002D01B0 /* RxCocoa.framework */; };
 		C162B0A723D9489E002D01B0 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09D23D9489E002D01B0 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1F6B71823D94D9600C61805 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09A23D9489E002D01B0 /* RxBlocking.framework */; };
+		C1F6B71923D94D9600C61805 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09B23D9489E002D01B0 /* RxTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +55,7 @@
 			files = (
 				C162B0A523D9489E002D01B0 /* RxRelay.framework in Embed Frameworks */,
 				C162B09F23D9489E002D01B0 /* RxSwift.framework in Embed Frameworks */,
-				C162B0A123D9489E002D01B0 /* RxBlocking.framework in Embed Frameworks */,
 				C162B0A723D9489E002D01B0 /* RxCocoa.framework in Embed Frameworks */,
-				C162B0A323D9489E002D01B0 /* RxTest.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,8 +102,6 @@
 				C162B0A623D9489E002D01B0 /* RxCocoa.framework in Frameworks */,
 				C162B09E23D9489E002D01B0 /* RxSwift.framework in Frameworks */,
 				B220F55481B73A834AF9792C /* Pods_FuriganaConverter.framework in Frameworks */,
-				C162B0A223D9489E002D01B0 /* RxTest.framework in Frameworks */,
-				C162B0A023D9489E002D01B0 /* RxBlocking.framework in Frameworks */,
 				C162B0A423D9489E002D01B0 /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F6B71823D94D9600C61805 /* RxBlocking.framework in Frameworks */,
+				C1F6B71923D94D9600C61805 /* RxTest.framework in Frameworks */,
 				904730A2E68C6CFD8EB28A78 /* Pods_FuriganaConverterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +243,7 @@
 				5343DD7F23D89192000D39F3 /* Sources */,
 				5343DD8023D89192000D39F3 /* Frameworks */,
 				5343DD8123D89192000D39F3 /* Resources */,
+				C1F6B71A23D94DB400C61805 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -411,10 +408,28 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		C1F6B71A23D94DB400C61805 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
 			);
 			name = Carthage;
@@ -730,6 +745,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WXLBJVR7R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FuriganaConverterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -753,6 +772,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WXLBJVR7R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FuriganaConverterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
