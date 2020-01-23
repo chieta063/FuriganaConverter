@@ -27,6 +27,8 @@
 		C162B0A723D9489E002D01B0 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09D23D9489E002D01B0 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1F6B71823D94D9600C61805 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09A23D9489E002D01B0 /* RxBlocking.framework */; };
 		C1F6B71923D94D9600C61805 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09B23D9489E002D01B0 /* RxTest.framework */; };
+		C1F6B72523D963AF00C61805 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F6B72423D963AF00C61805 /* SnapKit.framework */; };
+		C1F6B72623D963AF00C61805 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1F6B72423D963AF00C61805 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 				C162B0A523D9489E002D01B0 /* RxRelay.framework in Embed Frameworks */,
 				C162B09F23D9489E002D01B0 /* RxSwift.framework in Embed Frameworks */,
 				C162B0A723D9489E002D01B0 /* RxCocoa.framework in Embed Frameworks */,
+				C1F6B72623D963AF00C61805 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +92,7 @@
 		C162B09B23D9489E002D01B0 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		C162B09C23D9489E002D01B0 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		C162B09D23D9489E002D01B0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		C1F6B72423D963AF00C61805 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		C3017265442E9FC3D2E094FF /* Pods-FuriganaConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuriganaConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-FuriganaConverterTests/Pods-FuriganaConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F18F7BC74DD9C5217C919ABA /* Pods-FuriganaConverter-FuriganaConverterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuriganaConverter-FuriganaConverterUITests.release.xcconfig"; path = "Target Support Files/Pods-FuriganaConverter-FuriganaConverterUITests/Pods-FuriganaConverter-FuriganaConverterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F5C2F2EEC2690DF7E0C7CB89 /* Pods_FuriganaConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuriganaConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +107,7 @@
 				C162B09E23D9489E002D01B0 /* RxSwift.framework in Frameworks */,
 				B220F55481B73A834AF9792C /* Pods_FuriganaConverter.framework in Frameworks */,
 				C162B0A423D9489E002D01B0 /* RxRelay.framework in Frameworks */,
+				C1F6B72523D963AF00C61805 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +203,7 @@
 		F52FB498234C92F6A3CF9862 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1F6B72423D963AF00C61805 /* SnapKit.framework */,
 				C162B09A23D9489E002D01B0 /* RxBlocking.framework */,
 				C162B09D23D9489E002D01B0 /* RxCocoa.framework */,
 				C162B09C23D9489E002D01B0 /* RxRelay.framework */,
