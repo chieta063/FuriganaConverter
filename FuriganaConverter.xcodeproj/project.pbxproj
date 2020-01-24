@@ -272,13 +272,13 @@
 			buildConfigurationList = 5343DD9723D89192000D39F3 /* Build configuration list for PBXNativeTarget "FuriganaConverter" */;
 			buildPhases = (
 				C70243A46A8A18EF877CCFFC /* [CP] Check Pods Manifest.lock */,
-				5343DD6923D89191000D39F3 /* Sources */,
 				5343DD6A23D89191000D39F3 /* Frameworks */,
 				5343DD6B23D89191000D39F3 /* Resources */,
 				5343DDA023D89784000D39F3 /* R.swift */,
 				64DA2FA21711630C4CADF469 /* [CP] Embed Pods Frameworks */,
 				C162B0A823D9489E002D01B0 /* Embed Frameworks */,
 				C162B0A923D948EA002D01B0 /* Carthage */,
+				5343DD6923D89191000D39F3 /* Sources */,
 			);
 			buildRules = (
 			);
