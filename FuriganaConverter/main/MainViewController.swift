@@ -9,17 +9,24 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import ReactorKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, StoryboardView {
     @IBOutlet weak var modeSegmentedControl: UISegmentedControl!
     @IBOutlet weak var containerView: UIView!
     
-    private let disposeBag = DisposeBag()
+    var disposeBag = DisposeBag()
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addChild(KanjiTextViewController())
-        self.addChild(HiraganaTextViewController())
+        self.reactor = MainReactor(convertApi: ConvertAPI())
+        
+        self.addChild(KanjiTextViewController(reactor: self.reactor!))
+        self.addChild(HiraganaTextViewController(reactor: self.reactor!))
         
         self.modeSegmentedControl.rx.selectedSegmentIndex.bind { index in
             for (i, child) in self.children.enumerated() {
@@ -30,6 +37,10 @@ class MainViewController: UIViewController {
                 }
             }
         }.disposed(by: self.disposeBag)
+    }
+    
+    func bind(reactor: MainReactor) {
+        
     }
     
     private func addChildViewController(viewController: UIViewController) {

@@ -7,11 +7,24 @@
 //
 
 import UIKit
+import RxSwift
+import ReactorKit
 
-class KanjiTextViewController: UIViewController {
+class KanjiTextViewController: UIViewController, View {
     
-    init() {
+    @IBOutlet weak var kanjiTextView: UITextView!
+    @IBOutlet weak var pasteButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
+    
+    var disposeBag = DisposeBag()
+    
+    init(reactor: MainReactor) {
         super.init(nibName: nil, bundle: nil)
+        self.rx.methodInvoked(#selector(viewDidLoad))
+            .bind { [weak self] _ in
+                self?.reactor = reactor
+            }
+            .disposed(by: disposeBag)
     }
     
     required init?(coder: NSCoder) {
@@ -20,5 +33,32 @@ class KanjiTextViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    func bind(reactor: MainReactor) {
+        self.pasteButton.rx.tap
+            .map { UIPasteboard.general.string }
+            .errorOnNil()
+            .distinctUntilChanged()
+            .filter { !$0.isEmpty }
+            .map { [weak self] text -> MainReactor.Action  in
+                self?.kanjiTextView.text = text
+                return MainReactor.Action.paste(text)
+            }
+            .bind(to: reactor.action)
+            .disposed(by: self.disposeBag)
+        
+        self.resetButton.rx.tap.map { MainReactor.Action.reset }
+            .bind(to: reactor.action)
+            .disposed(by: self.disposeBag)
+        
+        reactor.state.map { $0.reset }
+            .distinctUntilChanged()
+            .filterNil()
+            .bind { [weak self] _ in
+                self?.kanjiTextView.text.removeAll()
+            }
+            .disposed(by: self.disposeBag)
     }
 }

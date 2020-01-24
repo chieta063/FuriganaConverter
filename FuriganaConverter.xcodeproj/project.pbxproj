@@ -20,6 +20,7 @@
 		53776BB423DB3683004C8E73 /* ReactorKitRuntime.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53776BB123DB3683004C8E73 /* ReactorKitRuntime.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		53776BB523DB3683004C8E73 /* ReactorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53776BB223DB3683004C8E73 /* ReactorKit.framework */; };
 		53776BB623DB3683004C8E73 /* ReactorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53776BB223DB3683004C8E73 /* ReactorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53776BB823DB38C9004C8E73 /* MainReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53776BB723DB38C9004C8E73 /* MainReactor.swift */; };
 		53776BBA23DB5371004C8E73 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53776BB923DB5371004C8E73 /* RxOptional.framework */; };
 		53776BBB23DB5371004C8E73 /* RxOptional.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53776BB923DB5371004C8E73 /* RxOptional.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		53E95CFD23DA901F00C29C08 /* ConertAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95CFC23DA901F00C29C08 /* ConertAPI.swift */; };
@@ -104,6 +105,7 @@
 		5343DD9423D89192000D39F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53776BB123DB3683004C8E73 /* ReactorKitRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactorKitRuntime.framework; path = Carthage/Build/iOS/ReactorKitRuntime.framework; sourceTree = "<group>"; };
 		53776BB223DB3683004C8E73 /* ReactorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactorKit.framework; path = Carthage/Build/iOS/ReactorKit.framework; sourceTree = "<group>"; };
+		53776BB723DB38C9004C8E73 /* MainReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReactor.swift; sourceTree = "<group>"; };
 		53776BB923DB5371004C8E73 /* RxOptional.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxOptional.framework; path = Carthage/Build/iOS/RxOptional.framework; sourceTree = "<group>"; };
 		53E95CFC23DA901F00C29C08 /* ConertAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConertAPI.swift; sourceTree = "<group>"; };
 		540DEC6AA3BCE2180D4C6087 /* Pods-FuriganaConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuriganaConverter.debug.xcconfig"; path = "Target Support Files/Pods-FuriganaConverter/Pods-FuriganaConverter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 			children = (
 				5343DD7423D89191000D39F3 /* MainViewController.swift */,
 				5343DD7623D89191000D39F3 /* Main.storyboard */,
+				53776BB723DB38C9004C8E73 /* MainReactor.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1F6B72123D94F8400C61805 /* HiraganaTextViewController.swift in Sources */,
+				53776BB823DB38C9004C8E73 /* MainReactor.swift in Sources */,
 				53E95CFD23DA901F00C29C08 /* ConertAPI.swift in Sources */,
 				5343DD7523D89191000D39F3 /* MainViewController.swift in Sources */,
 				5343DD7123D89191000D39F3 /* AppDelegate.swift in Sources */,
