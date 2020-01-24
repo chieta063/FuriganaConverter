@@ -16,6 +16,7 @@
 		5343DD7D23D89192000D39F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5343DD7B23D89192000D39F3 /* LaunchScreen.storyboard */; };
 		5343DD8823D89192000D39F3 /* FuriganaConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD8723D89192000D39F3 /* FuriganaConverterTests.swift */; };
 		5343DD9323D89192000D39F3 /* FuriganaConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD9223D89192000D39F3 /* FuriganaConverterUITests.swift */; };
+		53E95CFD23DA901F00C29C08 /* ConertAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95CFC23DA901F00C29C08 /* ConertAPI.swift */; };
 		80FF5076F616B2B5E497AD2B /* Pods_FuriganaConverter_FuriganaConverterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26F6656426D5824408D43EC /* Pods_FuriganaConverter_FuriganaConverterUITests.framework */; };
 		904730A2E68C6CFD8EB28A78 /* Pods_FuriganaConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66164D313E266792374A8F71 /* Pods_FuriganaConverterTests.framework */; };
 		B220F55481B73A834AF9792C /* Pods_FuriganaConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C2F2EEC2690DF7E0C7CB89 /* Pods_FuriganaConverter.framework */; };
@@ -26,6 +27,10 @@
 		C162B0A623D9489E002D01B0 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09D23D9489E002D01B0 /* RxCocoa.framework */; };
 		C162B0A723D9489E002D01B0 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09D23D9489E002D01B0 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C18E3E8223D9743600798F18 /* HiraganaTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C18E3E8123D9743600798F18 /* HiraganaTextViewController.xib */; };
+		C1CF57AA23D9901C00B4B56D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CF57A823D9901C00B4B56D /* Alamofire.framework */; };
+		C1CF57AB23D9901C00B4B56D /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1CF57A823D9901C00B4B56D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1CF57AC23D9901C00B4B56D /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CF57A923D9901C00B4B56D /* RxAlamofire.framework */; };
+		C1CF57AD23D9901C00B4B56D /* RxAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1CF57A923D9901C00B4B56D /* RxAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1F6B71823D94D9600C61805 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09A23D9489E002D01B0 /* RxBlocking.framework */; };
 		C1F6B71923D94D9600C61805 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162B09B23D9489E002D01B0 /* RxTest.framework */; };
 		C1F6B71F23D94F6500C61805 /* KanjiTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F6B71E23D94F6500C61805 /* KanjiTextViewController.swift */; };
@@ -62,7 +67,9 @@
 				C162B0A523D9489E002D01B0 /* RxRelay.framework in Embed Frameworks */,
 				C162B09F23D9489E002D01B0 /* RxSwift.framework in Embed Frameworks */,
 				C162B0A723D9489E002D01B0 /* RxCocoa.framework in Embed Frameworks */,
+				C1CF57AB23D9901C00B4B56D /* Alamofire.framework in Embed Frameworks */,
 				C1F6B72623D963AF00C61805 /* SnapKit.framework in Embed Frameworks */,
+				C1CF57AD23D9901C00B4B56D /* RxAlamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +93,7 @@
 		5343DD8E23D89192000D39F3 /* FuriganaConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuriganaConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5343DD9223D89192000D39F3 /* FuriganaConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaConverterUITests.swift; sourceTree = "<group>"; };
 		5343DD9423D89192000D39F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53E95CFC23DA901F00C29C08 /* ConertAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConertAPI.swift; sourceTree = "<group>"; };
 		540DEC6AA3BCE2180D4C6087 /* Pods-FuriganaConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuriganaConverter.debug.xcconfig"; path = "Target Support Files/Pods-FuriganaConverter/Pods-FuriganaConverter.debug.xcconfig"; sourceTree = "<group>"; };
 		549FD076F63C7B8E2674A38C /* Pods-FuriganaConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuriganaConverter.release.xcconfig"; path = "Target Support Files/Pods-FuriganaConverter/Pods-FuriganaConverter.release.xcconfig"; sourceTree = "<group>"; };
 		66164D313E266792374A8F71 /* Pods_FuriganaConverterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuriganaConverterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +105,8 @@
 		C162B09C23D9489E002D01B0 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		C162B09D23D9489E002D01B0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		C18E3E8123D9743600798F18 /* HiraganaTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HiraganaTextViewController.xib; sourceTree = "<group>"; };
+		C1CF57A823D9901C00B4B56D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		C1CF57A923D9901C00B4B56D /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
 		C1F6B71E23D94F6500C61805 /* KanjiTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiTextViewController.swift; sourceTree = "<group>"; };
 		C1F6B72023D94F8400C61805 /* HiraganaTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaTextViewController.swift; sourceTree = "<group>"; };
 		C1F6B72223D94FE500C61805 /* KanjiTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KanjiTextViewController.xib; sourceTree = "<group>"; };
@@ -112,6 +122,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C162B0A623D9489E002D01B0 /* RxCocoa.framework in Frameworks */,
+				C1CF57AA23D9901C00B4B56D /* Alamofire.framework in Frameworks */,
+				C1CF57AC23D9901C00B4B56D /* RxAlamofire.framework in Frameworks */,
 				C162B09E23D9489E002D01B0 /* RxSwift.framework in Frameworks */,
 				B220F55481B73A834AF9792C /* Pods_FuriganaConverter.framework in Frameworks */,
 				C162B0A423D9489E002D01B0 /* RxRelay.framework in Frameworks */,
@@ -165,6 +177,7 @@
 		5343DD6F23D89191000D39F3 /* FuriganaConverter */ = {
 			isa = PBXGroup;
 			children = (
+				53E95CFB23DA900700C29C08 /* api */,
 				C1F6B71D23D94ECC00C61805 /* hiragana */,
 				C1F6B71C23D94EC400C61805 /* kanji */,
 				C1F6B71B23D94EA000C61805 /* main */,
@@ -194,6 +207,14 @@
 				5343DD9423D89192000D39F3 /* Info.plist */,
 			);
 			path = FuriganaConverterUITests;
+			sourceTree = "<group>";
+		};
+		53E95CFB23DA900700C29C08 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				53E95CFC23DA901F00C29C08 /* ConertAPI.swift */,
+			);
+			path = api;
 			sourceTree = "<group>";
 		};
 		81F2E4D213D344CE7DC298F4 /* Pods */ = {
@@ -239,6 +260,8 @@
 		F52FB498234C92F6A3CF9862 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1CF57A823D9901C00B4B56D /* Alamofire.framework */,
+				C1CF57A923D9901C00B4B56D /* RxAlamofire.framework */,
 				C1F6B72423D963AF00C61805 /* SnapKit.framework */,
 				C162B09A23D9489E002D01B0 /* RxBlocking.framework */,
 				C162B09D23D9489E002D01B0 /* RxCocoa.framework */,
@@ -260,13 +283,13 @@
 			buildConfigurationList = 5343DD9723D89192000D39F3 /* Build configuration list for PBXNativeTarget "FuriganaConverter" */;
 			buildPhases = (
 				C70243A46A8A18EF877CCFFC /* [CP] Check Pods Manifest.lock */,
-				5343DD6923D89191000D39F3 /* Sources */,
 				5343DD6A23D89191000D39F3 /* Frameworks */,
 				5343DD6B23D89191000D39F3 /* Resources */,
 				5343DDA023D89784000D39F3 /* R.swift */,
 				64DA2FA21711630C4CADF469 /* [CP] Embed Pods Frameworks */,
 				C162B0A823D9489E002D01B0 /* Embed Frameworks */,
 				C162B0A923D948EA002D01B0 /* Carthage */,
+				5343DD6923D89191000D39F3 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -455,6 +478,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -559,6 +584,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1F6B72123D94F8400C61805 /* HiraganaTextViewController.swift in Sources */,
+				53E95CFD23DA901F00C29C08 /* ConertAPI.swift in Sources */,
 				5343DD7523D89191000D39F3 /* MainViewController.swift in Sources */,
 				5343DD7123D89191000D39F3 /* AppDelegate.swift in Sources */,
 				5343DD7323D89191000D39F3 /* SceneDelegate.swift in Sources */,
