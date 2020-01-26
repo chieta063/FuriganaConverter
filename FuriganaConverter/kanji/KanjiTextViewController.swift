@@ -15,7 +15,6 @@ class KanjiTextViewController: UIViewController, View {
     
     @IBOutlet weak var kanjiTextView: UITextView!
     @IBOutlet weak var pasteButton: UIButton!
-    @IBOutlet weak var resetButton: UIButton!
     
     var disposeBag = DisposeBag()
     
@@ -35,6 +34,7 @@ class KanjiTextViewController: UIViewController, View {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.kanjiTextView.placeholder = R.string.placeHolders.kanji()
+        self.pasteButton.layer.cornerRadius = 8
     }
     
     func bind(reactor: MainReactor) {

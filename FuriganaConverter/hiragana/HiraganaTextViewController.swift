@@ -33,7 +33,6 @@ class HiraganaTextViewController: UIViewController, View {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.hiraganaTextView.placeholder = R.string.placeHolders.hiragana()
     }
     
