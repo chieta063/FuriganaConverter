@@ -19,17 +19,14 @@ class MainReactor: Reactor {
     
     enum Action {
         case paste(String)
-        case reset
     }
     
     struct State {
         fileprivate(set) var convertedText: String
-        fileprivate(set) var reset: EmptyValue?
     }
     
     enum Mutation {
         case convert(String)
-        case reset
     }
     
     private let convertApi: ConvertAPI
@@ -37,7 +34,7 @@ class MainReactor: Reactor {
     
     init(convertApi: ConvertAPI) {
         self.convertApi = convertApi
-        self.initialState = State(convertedText: "", reset: nil)
+        self.initialState = State(convertedText: "")
     }
     
     func mutate(action: MainReactor.Action) -> Observable<MainReactor.Mutation> {
@@ -45,8 +42,6 @@ class MainReactor: Reactor {
         case let .paste(text):
             return ConvertAPI().convertToHiragana(sentence: text)
                 .flatMap { result in Observable.just(Mutation.convert(result)) }
-        case .reset:
-            return Observable.just(Mutation.reset)
         }
     }
     
@@ -55,9 +50,6 @@ class MainReactor: Reactor {
         switch mutation {
         case let .convert(convertedText):
             newState.convertedText = convertedText
-            newState.reset = nil
-        case .reset:
-            newState.reset = EmptyValue()
         }
         return newState
     }

@@ -12,7 +12,6 @@
             <connections>
                 <outlet property="kanjiTextView" destination="sSf-qU-szB" id="H8y-RT-KeG"/>
                 <outlet property="pasteButton" destination="0fi-ny-nUz" id="k1R-6O-BJa"/>
-                <outlet property="resetButton" destination="YrD-8h-Z8F" id="W0x-ye-rNV"/>
                 <outlet property="view" destination="iN0-l3-epB" id="HSb-JI-x1u"/>
             </connections>
         </placeholder>
@@ -22,36 +21,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sSf-qU-szB">
-                    <rect key="frame" x="8" y="60" width="398" height="764"/>
+                    <rect key="frame" x="0.0" y="52" width="414" height="764"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xho-Dk-Ubg">
-                    <rect key="frame" x="16" y="832" width="382" height="30"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fi-ny-nUz">
-                            <rect key="frame" x="0.0" y="0.0" width="183" height="30"/>
-                            <state key="normal" title="貼り付け"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrD-8h-Z8F">
-                            <rect key="frame" x="199" y="0.0" width="183" height="30"/>
-                            <state key="normal" title="リセット"/>
-                        </button>
-                    </subviews>
-                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fi-ny-nUz">
+                    <rect key="frame" x="176" y="824" width="62" height="30"/>
+                    <state key="normal" title="貼り付け"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="xho-Dk-Ubg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="86s-JI-xa9"/>
-                <constraint firstItem="xho-Dk-Ubg" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="8VK-57-cK9"/>
-                <constraint firstItem="xho-Dk-Ubg" firstAttribute="top" secondItem="sSf-qU-szB" secondAttribute="bottom" constant="8" symbolic="YES" id="BVH-mv-q3b"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sSf-qU-szB" secondAttribute="trailing" constant="8" id="LuK-3F-zZp"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xho-Dk-Ubg" secondAttribute="trailing" constant="16" id="d7P-6Z-ePG"/>
-                <constraint firstItem="sSf-qU-szB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="pid-gC-JhQ"/>
-                <constraint firstItem="sSf-qU-szB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="u3m-7e-ecl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sSf-qU-szB" secondAttribute="trailing" id="LuK-3F-zZp"/>
+                <constraint firstItem="0fi-ny-nUz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NhP-at-OVp"/>
+                <constraint firstItem="0fi-ny-nUz" firstAttribute="top" secondItem="sSf-qU-szB" secondAttribute="bottom" constant="8" symbolic="YES" id="inM-p0-bCt"/>
+                <constraint firstItem="sSf-qU-szB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="pid-gC-JhQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0fi-ny-nUz" secondAttribute="bottom" constant="8" id="qeb-Bb-wW6"/>
+                <constraint firstItem="sSf-qU-szB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="u3m-7e-ecl"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="132" y="126"/>

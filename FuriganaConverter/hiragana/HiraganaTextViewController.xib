@@ -20,9 +20,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QtY-3t-tF7">
-                    <rect key="frame" x="8" y="60" width="398" height="794"/>
+                    <rect key="frame" x="0.0" y="52" width="414" height="810"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -30,13 +29,13 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="QtY-3t-tF7" secondAttribute="bottom" constant="8" id="71h-B6-KiR"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QtY-3t-tF7" secondAttribute="trailing" constant="8" id="9wy-6f-gZj"/>
-                <constraint firstItem="QtY-3t-tF7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="X7v-E5-cH0"/>
-                <constraint firstItem="QtY-3t-tF7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="byT-XK-HjJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="QtY-3t-tF7" secondAttribute="bottom" id="71h-B6-KiR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QtY-3t-tF7" secondAttribute="trailing" id="9wy-6f-gZj"/>
+                <constraint firstItem="QtY-3t-tF7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="X7v-E5-cH0"/>
+                <constraint firstItem="QtY-3t-tF7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="byT-XK-HjJ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="132" y="126"/>
+            <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
         </view>
     </objects>
 </document>

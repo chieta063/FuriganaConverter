@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 import RxSwift
 import ReactorKit
+import UITextView_Placeholder
 
 class HiraganaTextViewController: UIViewController, View {
     
@@ -32,24 +33,17 @@ class HiraganaTextViewController: UIViewController, View {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.hiraganaTextView.placeholder = R.string.placeHolders.hiragana()
     }
     
     func bind(reactor: MainReactor) {
         reactor.state.map { $0.convertedText }
-            .distinctUntilChanged()
             .filter { text in
                 !text.isEmpty
             }
             .bind { [weak self] text in
                 self?.hiraganaTextView.text = text
-            }
-            .disposed(by: self.disposeBag)
-        
-        reactor.state.map { $0.reset }
-            .distinctUntilChanged()
-            .filterNil()
-            .bind { [weak self] _ in
-                self?.hiraganaTextView.text.removeAll()
             }
             .disposed(by: self.disposeBag)
     }
