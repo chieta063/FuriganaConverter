@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5315C8E023D89DF70032164B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5315C8DF23D89DF70032164B /* R.generated.swift */; };
+		532EC24023DF2861009FBDFC /* ConvertAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532EC23F23DF2861009FBDFC /* ConvertAPITests.swift */; };
 		5343DD7123D89191000D39F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD7023D89191000D39F3 /* AppDelegate.swift */; };
 		5343DD7323D89191000D39F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD7223D89191000D39F3 /* SceneDelegate.swift */; };
 		5343DD7523D89191000D39F3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD7423D89191000D39F3 /* MainViewController.swift */; };
 		5343DD7823D89191000D39F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5343DD7623D89191000D39F3 /* Main.storyboard */; };
 		5343DD7A23D89192000D39F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5343DD7923D89192000D39F3 /* Assets.xcassets */; };
 		5343DD7D23D89192000D39F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5343DD7B23D89192000D39F3 /* LaunchScreen.storyboard */; };
-		5343DD8823D89192000D39F3 /* FuriganaConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD8723D89192000D39F3 /* FuriganaConverterTests.swift */; };
+		5343DD8823D89192000D39F3 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD8723D89192000D39F3 /* MainViewControllerTests.swift */; };
 		5343DD9323D89192000D39F3 /* FuriganaConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD9223D89192000D39F3 /* FuriganaConverterUITests.swift */; };
 		53673A4223DF160B00DEB680 /* SwinjectAutoregistration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53673A4023DF160B00DEB680 /* SwinjectAutoregistration.framework */; };
 		53673A4323DF160C00DEB680 /* SwinjectAutoregistration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53673A4023DF160B00DEB680 /* SwinjectAutoregistration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -96,6 +97,7 @@
 /* Begin PBXFileReference section */
 		504A6A5CB944730CE1480C33 /* Pods-FuriganaConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuriganaConverterTests.release.xcconfig"; path = "Target Support Files/Pods-FuriganaConverterTests/Pods-FuriganaConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 		5315C8DF23D89DF70032164B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		532EC23F23DF2861009FBDFC /* ConvertAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertAPITests.swift; sourceTree = "<group>"; };
 		5343DD6D23D89191000D39F3 /* FuriganaConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuriganaConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5343DD7023D89191000D39F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5343DD7223D89191000D39F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,7 +107,7 @@
 		5343DD7C23D89192000D39F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5343DD7E23D89192000D39F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5343DD8323D89192000D39F3 /* FuriganaConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuriganaConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5343DD8723D89192000D39F3 /* FuriganaConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaConverterTests.swift; sourceTree = "<group>"; };
+		5343DD8723D89192000D39F3 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
 		5343DD8923D89192000D39F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5343DD8E23D89192000D39F3 /* FuriganaConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuriganaConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5343DD9223D89192000D39F3 /* FuriganaConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaConverterUITests.swift; sourceTree = "<group>"; };
@@ -224,7 +226,8 @@
 		5343DD8623D89192000D39F3 /* FuriganaConverterTests */ = {
 			isa = PBXGroup;
 			children = (
-				5343DD8723D89192000D39F3 /* FuriganaConverterTests.swift */,
+				532EC23F23DF2861009FBDFC /* ConvertAPITests.swift */,
+				5343DD8723D89192000D39F3 /* MainViewControllerTests.swift */,
 				5343DD8923D89192000D39F3 /* Info.plist */,
 			);
 			path = FuriganaConverterTests;
@@ -638,7 +641,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5343DD8823D89192000D39F3 /* FuriganaConverterTests.swift in Sources */,
+				532EC24023DF2861009FBDFC /* ConvertAPITests.swift in Sources */,
+				5343DD8823D89192000D39F3 /* MainViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

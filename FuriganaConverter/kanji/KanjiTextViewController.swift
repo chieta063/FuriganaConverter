@@ -46,7 +46,7 @@ class KanjiTextViewController: UIViewController, View {
     func bind(reactor: MainReactor) {
         self.pasteButton.rx.tap
             .map { UIPasteboard.general.string }
-            .errorOnNil()
+            .filterNil()
             .map { [weak self] text -> MainReactor.Action  in
                 self?.kanjiTextView.text = text
                 return MainReactor.Action.paste(text)
