@@ -7,6 +7,7 @@ target 'FuriganaConverter' do
 
   # Pods for FuriganaConverter
   pod 'R.swift'
+  pod 'UITextView+Placeholder'
 
   target 'FuriganaConverterTests' do
     inherit! :search_paths

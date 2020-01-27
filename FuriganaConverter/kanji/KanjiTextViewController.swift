@@ -9,12 +9,12 @@
 import UIKit
 import RxSwift
 import ReactorKit
+import UITextView_Placeholder
 
 class KanjiTextViewController: UIViewController, View {
     
     @IBOutlet weak var kanjiTextView: UITextView!
     @IBOutlet weak var pasteButton: UIButton!
-    @IBOutlet weak var resetButton: UIButton!
     
     var disposeBag = DisposeBag()
     
@@ -33,32 +33,19 @@ class KanjiTextViewController: UIViewController, View {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.kanjiTextView.placeholder = R.string.placeHolders.kanji()
+        self.pasteButton.layer.cornerRadius = 8
     }
     
     func bind(reactor: MainReactor) {
         self.pasteButton.rx.tap
             .map { UIPasteboard.general.string }
             .errorOnNil()
-            .distinctUntilChanged()
-            .filter { !$0.isEmpty }
             .map { [weak self] text -> MainReactor.Action  in
                 self?.kanjiTextView.text = text
                 return MainReactor.Action.paste(text)
             }
             .bind(to: reactor.action)
-            .disposed(by: self.disposeBag)
-        
-        self.resetButton.rx.tap.map { MainReactor.Action.reset }
-            .bind(to: reactor.action)
-            .disposed(by: self.disposeBag)
-        
-        reactor.state.map { $0.reset }
-            .distinctUntilChanged()
-            .filterNil()
-            .bind { [weak self] _ in
-                self?.kanjiTextView.text.removeAll()
-            }
             .disposed(by: self.disposeBag)
     }
 }
