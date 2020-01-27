@@ -30,6 +30,7 @@ class ConvertAPI {
             ],
             headers: ["Content_Type":"application/json"]
         )
+        .subscribeOn(ConcurrentMainScheduler.instance)
         .flatMap { response in
             return Observable.just(response).map { response in
                 if let json = response as? [String : String], let converted = json["converted"] {

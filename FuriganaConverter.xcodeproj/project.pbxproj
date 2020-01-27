@@ -16,6 +16,10 @@
 		5343DD7D23D89192000D39F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5343DD7B23D89192000D39F3 /* LaunchScreen.storyboard */; };
 		5343DD8823D89192000D39F3 /* FuriganaConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD8723D89192000D39F3 /* FuriganaConverterTests.swift */; };
 		5343DD9323D89192000D39F3 /* FuriganaConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343DD9223D89192000D39F3 /* FuriganaConverterUITests.swift */; };
+		53673A4223DF160B00DEB680 /* SwinjectAutoregistration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53673A4023DF160B00DEB680 /* SwinjectAutoregistration.framework */; };
+		53673A4323DF160C00DEB680 /* SwinjectAutoregistration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53673A4023DF160B00DEB680 /* SwinjectAutoregistration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53673A4423DF160C00DEB680 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53673A4123DF160B00DEB680 /* Swinject.framework */; };
+		53673A4523DF160C00DEB680 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53673A4123DF160B00DEB680 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		53776BB323DB3683004C8E73 /* ReactorKitRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53776BB123DB3683004C8E73 /* ReactorKitRuntime.framework */; };
 		53776BB423DB3683004C8E73 /* ReactorKitRuntime.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53776BB123DB3683004C8E73 /* ReactorKitRuntime.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		53776BB523DB3683004C8E73 /* ReactorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53776BB223DB3683004C8E73 /* ReactorKit.framework */; };
@@ -77,6 +81,8 @@
 				C162B0A523D9489E002D01B0 /* RxRelay.framework in Embed Frameworks */,
 				C162B09F23D9489E002D01B0 /* RxSwift.framework in Embed Frameworks */,
 				C162B0A723D9489E002D01B0 /* RxCocoa.framework in Embed Frameworks */,
+				53673A4523DF160C00DEB680 /* Swinject.framework in Embed Frameworks */,
+				53673A4323DF160C00DEB680 /* SwinjectAutoregistration.framework in Embed Frameworks */,
 				C1CF57AB23D9901C00B4B56D /* Alamofire.framework in Embed Frameworks */,
 				C1F6B72623D963AF00C61805 /* SnapKit.framework in Embed Frameworks */,
 				C1CF57AD23D9901C00B4B56D /* RxAlamofire.framework in Embed Frameworks */,
@@ -104,6 +110,8 @@
 		5343DD8E23D89192000D39F3 /* FuriganaConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuriganaConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5343DD9223D89192000D39F3 /* FuriganaConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaConverterUITests.swift; sourceTree = "<group>"; };
 		5343DD9423D89192000D39F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53673A4023DF160B00DEB680 /* SwinjectAutoregistration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectAutoregistration.framework; path = Carthage/Build/iOS/SwinjectAutoregistration.framework; sourceTree = "<group>"; };
+		53673A4123DF160B00DEB680 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		53776BB123DB3683004C8E73 /* ReactorKitRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactorKitRuntime.framework; path = Carthage/Build/iOS/ReactorKitRuntime.framework; sourceTree = "<group>"; };
 		53776BB223DB3683004C8E73 /* ReactorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactorKit.framework; path = Carthage/Build/iOS/ReactorKit.framework; sourceTree = "<group>"; };
 		53776BB723DB38C9004C8E73 /* MainReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReactor.swift; sourceTree = "<group>"; };
@@ -143,8 +151,10 @@
 				C1CF57AC23D9901C00B4B56D /* RxAlamofire.framework in Frameworks */,
 				53776BB523DB3683004C8E73 /* ReactorKit.framework in Frameworks */,
 				53776BB323DB3683004C8E73 /* ReactorKitRuntime.framework in Frameworks */,
+				53673A4223DF160B00DEB680 /* SwinjectAutoregistration.framework in Frameworks */,
 				C162B09E23D9489E002D01B0 /* RxSwift.framework in Frameworks */,
 				B220F55481B73A834AF9792C /* Pods_FuriganaConverter.framework in Frameworks */,
+				53673A4423DF160C00DEB680 /* Swinject.framework in Frameworks */,
 				C162B0A423D9489E002D01B0 /* RxRelay.framework in Frameworks */,
 				C1F6B72523D963AF00C61805 /* SnapKit.framework in Frameworks */,
 			);
@@ -281,6 +291,8 @@
 		F52FB498234C92F6A3CF9862 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53673A4123DF160B00DEB680 /* Swinject.framework */,
+				53673A4023DF160B00DEB680 /* SwinjectAutoregistration.framework */,
 				53776BB923DB5371004C8E73 /* RxOptional.framework */,
 				53776BB223DB3683004C8E73 /* ReactorKit.framework */,
 				53776BB123DB3683004C8E73 /* ReactorKitRuntime.framework */,
