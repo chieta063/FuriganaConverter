@@ -9,13 +9,19 @@
 import UIKit
 import RxSwift
 import RxCocoa
-import ReactorKit
+import Swinject
+import SwinjectAutoregistration
 
-class MainViewController: UIViewController, StoryboardView {
+class MainViewController: UIViewController {
     @IBOutlet weak var modeSegmentedControl: UISegmentedControl!
     @IBOutlet weak var containerView: UIView!
     
     var disposeBag = DisposeBag()
+    
+    static let container = Container { container in
+        container.autoregister(ConvertAPI.self, initializer: ConvertAPI.init)
+        container.autoregister(MainReactor.self, initializer: MainReactor.init).inObjectScope(.container)
+    }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -23,10 +29,9 @@ class MainViewController: UIViewController, StoryboardView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.reactor = MainReactor(convertApi: ConvertAPI())
         
-        self.addChild(KanjiTextViewController(reactor: self.reactor!))
-        self.addChild(HiraganaTextViewController(reactor: self.reactor!))
+        self.addChild(KanjiTextViewController.container.resolve(KanjiTextViewController.self)!)
+        self.addChild(HiraganaTextViewController.container.resolve(HiraganaTextViewController.self)!)
         
         self.modeSegmentedControl.rx.selectedSegmentIndex.bind { index in
             for (i, child) in self.children.enumerated() {
@@ -37,10 +42,6 @@ class MainViewController: UIViewController, StoryboardView {
                 }
             }
         }.disposed(by: self.disposeBag)
-    }
-    
-    func bind(reactor: MainReactor) {
-        
     }
     
     private func addChildViewController(viewController: UIViewController) {

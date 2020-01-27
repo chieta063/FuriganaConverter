@@ -11,12 +11,18 @@ import SnapKit
 import RxSwift
 import ReactorKit
 import UITextView_Placeholder
+import Swinject
+import SwinjectAutoregistration
 
 class HiraganaTextViewController: UIViewController, View {
     
     @IBOutlet weak var hiraganaTextView: UITextView!
     
     var disposeBag = DisposeBag()
+    
+    static let container = Container(parent: MainViewController.container) { container in
+        container.autoregister(HiraganaTextViewController.self, initializer: HiraganaTextViewController.init)
+    }
     
     init(reactor: MainReactor) {
         super.init(nibName: nil, bundle: nil)

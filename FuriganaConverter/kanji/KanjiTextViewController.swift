@@ -10,6 +10,8 @@ import UIKit
 import RxSwift
 import ReactorKit
 import UITextView_Placeholder
+import Swinject
+import SwinjectAutoregistration
 
 class KanjiTextViewController: UIViewController, View {
     
@@ -17,6 +19,10 @@ class KanjiTextViewController: UIViewController, View {
     @IBOutlet weak var pasteButton: UIButton!
     
     var disposeBag = DisposeBag()
+    
+    static let container = Container(parent: MainViewController.container) { container in
+        container.autoregister(KanjiTextViewController.self, initializer: KanjiTextViewController.init)
+    }
     
     init(reactor: MainReactor) {
         super.init(nibName: nil, bundle: nil)

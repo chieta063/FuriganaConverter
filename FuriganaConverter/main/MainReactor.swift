@@ -11,10 +11,6 @@ import RxSwift
 import RxOptional
 import ReactorKit
 
-struct EmptyValue: Equatable {
-    
-}
-
 class MainReactor: Reactor {
     
     enum Action {
