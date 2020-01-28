@@ -25,6 +25,9 @@ iOS 13.2
 ### Installation
 アプリを起動するために以下のコマンドを順に実行してください。
 ``` zsh
+## bundle
+bundle install
+
 ## CocoaPod
 pod install
 
@@ -32,7 +35,6 @@ pod install
 carthage update --platform iOS
 
 ## ReactorKit
-carthage update 2>/dev/null
-(cd Carthage/Checkouts/ReactorKit && swift package generate-xcodeproj)
-carthage build
+cd Carthage/Checkouts/ReactorKit && swift package generate-xcodeproj
+carthage build --platform iOS --cache-builds　## プロジェクトのルートディレクトリに移動して実行
 ```
